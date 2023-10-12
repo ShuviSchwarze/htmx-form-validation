@@ -1,0 +1,9 @@
+<div class="mb-3 relative" hx-target="this" hx-swap="outerHTML">
+    <div class="mb-2">
+        <label class="font-semibold"><small>Email Address</small></label>
+    </div>
+    <input class="w-full rounded-lg border-red-400 border-2 placeholder-gray-300" value="{{ email }}" name="email"
+        hx-post="/form/email" hx-indicator="#eInd" />
+    <img class="absolute right-3 top-[46px] htmx-indicator" id="eInd" src="static/img/bars.svg" />
+    <small class="text-red-400">{{ error }}</small>
+</div>
